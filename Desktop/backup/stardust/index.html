@@ -540,6 +540,148 @@
           });
         }, 100);
       });
+      
+      // Navigation menu functions
+      function gotoPlanet(planet) {
+        setTimeout(function() {
+          if (typeof wwtlib !== 'undefined' && wwtlib.WWTControl && wwtlib.WWTControl.singleton) {
+            var target;
+            switch(planet) {
+              case 'sun': target = wwtlib.SolarSystemObjects.sun; break;
+              case 'mercury': target = wwtlib.SolarSystemObjects.mercury; break;
+              case 'venus': target = wwtlib.SolarSystemObjects.venus; break;
+              case 'earth': target = wwtlib.SolarSystemObjects.earth; break;
+              case 'mars': target = wwtlib.SolarSystemObjects.mars; break;
+              case 'jupiter': target = wwtlib.SolarSystemObjects.jupiter; break;
+              case 'saturn': target = wwtlib.SolarSystemObjects.saturn; break;
+              case 'uranus': target = wwtlib.SolarSystemObjects.uranus; break;
+              case 'neptune': target = wwtlib.SolarSystemObjects.neptune; break;
+              case 'pluto': target = wwtlib.SolarSystemObjects.pluto; break;
+            }
+            if (target) {
+              wwtlib.WWTControl.singleton.gotoTarget3(target, false, false, true);
+            }
+          }
+        }, 100);
+      }
+      
+      function setSkyView(view) {
+        setTimeout(function() {
+          if (typeof wwtlib !== 'undefined' && wwtlib.WWTControl && wwtlib.WWTControl.singleton) {
+            switch(view) {
+              case 'optical':
+                wwtlib.WWTControl.singleton.setBackgroundImageByName('Digitized Sky Survey (Color)');
+                break;
+              case 'infrared':
+                wwtlib.WWTControl.singleton.setBackgroundImageByName('2MASS: Catalog (Synthetic, Near Infrared)');
+                break;
+              case 'xray':
+                wwtlib.WWTControl.singleton.setBackgroundImageByName('RASS: ROSAT All Sky Survey (X-ray)');
+                break;
+              case 'radio':
+                wwtlib.WWTControl.singleton.setBackgroundImageByName('Hydrogen Alpha Full Sky Map');
+                break;
+              case 'microwave':
+                wwtlib.WWTControl.singleton.setBackgroundImageByName('Planck CMB');
+                break;
+            }
+          }
+        }, 100);
+      }
+      
+      function gotoConstellation(constellation) {
+        setTimeout(function() {
+          if (typeof wwtlib !== 'undefined' && wwtlib.WWTControl && wwtlib.WWTControl.singleton) {
+            var coords = {
+              'orion': {ra: 5.5, dec: 0},
+              'ursa_major': {ra: 11, dec: 55},
+              'cassiopeia': {ra: 1, dec: 60},
+              'andromeda': {ra: 1, dec: 40},
+              'leo': {ra: 10.5, dec: 15}
+            };
+            if (coords[constellation]) {
+              wwtlib.WWTControl.singleton.gotoRaDecZoom(coords[constellation].ra * 15, coords[constellation].dec, 45, false);
+            }
+          }
+        }, 100);
+      }
+      
+      function gotoDeepSpace(object) {
+        setTimeout(function() {
+          if (typeof wwtlib !== 'undefined' && wwtlib.WWTControl && wwtlib.WWTControl.singleton) {
+            var coords = {
+              'm31': {ra: 10.68, dec: 41.27, zoom: 2},
+              'm42': {ra: 83.82, dec: -5.39, zoom: 1},
+              'm57': {ra: 283.4, dec: 33.03, zoom: 0.5},
+              'm1': {ra: 83.63, dec: 22.01, zoom: 0.5},
+              'm13': {ra: 250.42, dec: 36.46, zoom: 1}
+            };
+            if (coords[object]) {
+              wwtlib.WWTControl.singleton.gotoRaDecZoom(coords[object].ra, coords[object].dec, coords[object].zoom, false);
+            }
+          }
+        }, 100);
+      }
+      
+      function showSearch() {
+        var searchTerm = prompt('Search for astronomical object:');
+        if (searchTerm) {
+          setTimeout(function() {
+            if (typeof wwtlib !== 'undefined' && wwtlib.WWTControl && wwtlib.WWTControl.singleton) {
+              wwtlib.WWTControl.singleton.gotoTarget(searchTerm, false, false, true);
+            }
+          }, 100);
+        }
+      }
+    </script>
+    
+    <!-- Navigation Menu Scripts -->
+    <script>
+      (function($) { "use strict";
+        
+        $(function() {
+          var header = $(".start-style");
+          $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+          
+            if (scroll >= 10) {
+              header.removeClass('start-style').addClass("scroll-on");
+            } else {
+              header.removeClass("scroll-on").addClass('start-style');
+            }
+          });
+        });
+        
+        // Animation
+        $(document).ready(function() {
+          setTimeout(function() {
+            $('body.hero-anime').removeClass('hero-anime');
+          }, 2000);
+        });
+
+        // Menu On Hover
+        $('body').on('mouseenter mouseleave','.nav-item',function(e){
+          if ($(window).width() > 750) {
+            var _d=$(e.target).closest('.nav-item');_d.addClass('show');
+            setTimeout(function(){
+            _d[_d.is(':hover')?'addClass':'removeClass']('show');
+            },1);
+          }
+        });
+        
+        // Switch light/dark
+        $("#switch").on('click', function () {
+          if ($("body").hasClass("dark")) {
+            $("body").removeClass("dark");
+            $("#switch").removeClass("switched");
+          }
+          else {
+            $("body").addClass("dark");
+            $("#switch").addClass("switched");
+          }
+        });  
+        
+      })(jQuery);
     </script>
   </head>
 
