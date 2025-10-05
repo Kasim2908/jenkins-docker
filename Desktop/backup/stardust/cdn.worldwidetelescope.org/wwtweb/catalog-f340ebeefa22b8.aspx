@@ -1,0 +1,1365 @@
+1	Select Your Language
+2	This will restore user settings to their default values. Are you sure you want to proceed?
+3	AAS WorldWide Telescope
+4	You need 3d Graphics and DirectX installed to run this application
+5	Your tour has unsaved changes. Do you want to save the changes before closing?
+6	Tour Editor
+7	Name:
+8	Information
+9	Look up on SIMBAD
+10	Look up on SEDS
+11	Look up on Wikipedia
+12	Look up publications on ADS
+13	Imagery
+14	Get DSS image
+15	Get SDSS image
+16	Get DSS FITS
+17	Virtual Observatory Searches
+18	USNO NVO cone search
+19	HLA Footprints
+20	Properties
+21	Copy Shortcut
+22	Add to Collection
+23	New Collection...
+24	Remove from Collection
+25	Edit...
+26	Join a Community...
+27	Update Login Credentials...
+28	Logout
+29	Upload Tour to Community...
+30	Upload Observing List to Community...
+31	Upload Image to Community...
+32	Server Side Search
+33	Catalogs...
+34	SIMBAD Search...
+35	Tour Home
+36	Tour Search Web Page
+37	Create a New Tour...
+38	Submit Tour for Publication...
+39	Auto Repeat
+40	One
+41	All
+42	Off
+43	Edit Tour
+44	Slew To Object
+45	Center on Scope
+46	Sync Scope to Current Location
+47	Choose Telescope
+48	Connect
+49	Track Telescope
+50	Park
+51	ASCOM Platform
+52	New
+53	Collection...
+54	Slide-Based Tour...
+55	&Open
+56	Tour...
+57	Collection...
+58	Image...
+59	Show Finder
+60	Play Collection as Slide Show
+61	About AAS WorldWide Telescope
+62	Getting Started (Help)
+63	AAS WorldWide Telescope Home Page
+64	E&xit
+65	Check for Updates...
+66	Product Support...
+67	Restore Defaults
+68	Advanced
+69	Show Download Queue
+70	Start Queue
+71	Stop Queue
+72	Show Performance Data
+73	Master Controller
+74	Flush Cache
+75	Reset Camera
+76	Copy Current View Image
+77	Copy Shortcut to this View
+78	Horizon Panoramas...
+79	Manage Image Layers...
+80	Advanced View Options...
+81	Show KML Browser
+82	Remove from Image Cache
+83	Set Current View as Windows Desktop Background
+84	  Tiles in View:
+85	 Triangles Rendered:
+86	 Moves Sent:
+87	AAS WorldWide Telescope Tour
+88	AAS WorldWide Telescope Media List
+89	AAS WorldWide Telescope Constellation Figures
+90	No Object
+91	Add Point to Constellation Figure
+92	Can't Launch Help
+93	The Imagery data file could not be downloaded or has been corrupted. AAS WorldWide Telescope must close. You need a working internet connection to update this file. Try again later
+94	AAS WorldWide Telescope Notification
+95	You must Update your client to connect to AAS WorldWide Telescope.\n(Your version: {0}, Update version: {1})
+96	There is a new software update available.\n(Your version: {0}, Update version: {1})
+97	You have the latest version.\n(Your version: {0}, Server version: {1})
+98	No Internet connection was detected. Please ensure that you have internet connectivity. If you need a proxy make sure you have selected the correct proxy server and port in the Settings Tab. Only cached information is available and some functions will not be available. You may continue in off-line mode.
+99	There was a problem saving the downloaded FITS file. Please make sure you specified a path where you have permissions to save and that has free space.
+100	Download FITS Image File
+101	AAS WorldWide Telescope Tours
+102	This file does not seem to be a valid tour
+103	The tour file could not be downloaded and was not cached. Check you network connection.
+104	The tour file could not be downloaded and was not cached. Check you network connection.
+105	The tour file is invalid. Check you network connection.
+106	Could not load tour
+107	AAS WorldWide Telescope Collection
+109	This file does not seem to be a valid collection
+110	The file opened is a community registration file and this community is already registered.
+111	The file opened is a community registration file. Would you like to add this to your communities list?
+112	The image file did not contain valid AVM Metadata to position it in the sky
+113	Load Image
+114	Respect Copyright. Please respect the rights of artists and creators. Content such as music is protected by copyright. The music made available to you in AAS WorldWide Telescope is protected by copyright and may be used for the sole purpose of creating tours in AAS WorldWide Telescope. You may not share other people's content unless you own the rights or have permission from the owner.
+115	There was a problem saving the tour.
+116	Submission Failed
+117	There was no author image. Please add one and submit again.
+118	There was a problem submitting the tour.
+119	The tour was successfully submitted for publication. It must undergo technical review and approval before it will appear on the tour directory.
+120	Submit Tour for Publication
+121	There was a problem submitting the tour. Please review the tour content and make sure all fields are filled in correctly and that the total content size is below in maximum tour size.
+122	Unpark
+123	Disconnect
+124	Could not connect to the server to check for updates. Try again later.
+125	SIMBAD Search - Not Found
+126	Could not connect to SIMBAD Name Resolution Server. Check you internet connection
+127	There is no image data in the disk cache to purge.
+128	The imageset was removed from cache and {0}MB was freed
+129	Remove
+130	Browse...
+131	Could not load audio file. Check to make sure it is valid, a supported type and of a reasonable size.
+132	Music: 
+133	Voiceover: 
+134	Explore
+135	Guided Tours
+137	Search
+138	Community
+139	Telescope
+140	View
+141	Settings
+142	In:
+143	End
+144	Out:
+145	Volume
+146	AAS WorldWide Telescope keeps copies of the imagery, tours, and catalogs that you view. Keeping this data enables you to view tours and imagery again quickly even if your computer is not connected to the Internet. Selecting options and clicking Purge frees up disk space but the data is not available until it is downloaded again.
+147	Size : 
+148	Scanning Cache Size
+149	This will delete custom constellation figures as well as other selected data and close the application. Do you want to continue?
+150	This will delete cached data and close the application. Do you want to continue?
+151	Purging Cache
+152	Calculating Cache Use
+153	Catalogs
+154	Cached Tours
+155	Imagery
+156	OK
+157	Cancel
+158	Purge
+159	Select Data to Purge
+160	Manage Data Cache
+161	Add New Item
+162	No Results
+163	Select a Community...
+164	Constellation Figure Editor
+165	Right-click on star to add point
+166	Add
+167	Delete
+168	Save
+169	This will remove all points from the selected constellation.\nAre you sure you want to do this?
+170	Confirm Delete all Constellation Points
+171	Filed of view height in degrees : minutes : seconds of arc
+172	Name of the constellation that the view center is in.
+173	Download Progress
+174	Crossfades background and foreground imagery
+175	Select the type of view, Sky, Earth, etc.
+176	Select the imagery to display
+177	Filters context results
+178	Context Search - Shows interesting places in the current view.
+179	Constellation Overview
+180	Shows field of view relative to the celestial sphere
+181	Image Crossfade
+182	Tracking
+183	Look At
+184	Context Search Filter
+185	The Cities Catalog data file could not be downloaded or has been corrupted. Restart the application with a network connection to download a new file.
+186	The Catalog data file could not be downloaded or has been corrupted. Restart the application with a network connection to download a new file.
+187	Date Time Selection
+188	Year
+189	Month
+190	Day
+191	Hrs
+192	Min
+193	Sec
+194	UTC
+195	Apply
+491	Scan complete
+197	Focal Ratio
+198	Mount Type
+199	Aperture
+200	Focal Length
+201	Camera
+202	Eyepiece
+203	Organization
+204	Camera Rotation
+205	Vert Pixels
+206	Imaging Surfaces
+207	Horiz Pixels
+208	Height
+209	Width
+210	Manufacturer
+211	For More information:
+212	Close
+213	Field of View Indicator
+214	One of the files in the collection is missing, corrupt or inaccessible
+215	Invalid File Format
+216	Please wait while the file is being downloaded.
+217	File Download Progress
+218	The folder was not loaded from a file
+219	Select a Collection to explore...
+220	Could not connect to the AAS WorldWide Telescope Server to download tours, and there was no available cached tour list. Please check your network or proxy settings and make sure you have a network connection.
+221	The tour file could not be downloaded and is not in cache. Check you network connection.
+222	Open Images
+223	Open Collections
+224	Delete Folder
+225	Rename
+226	Copy To My Collections
+227	Save Folder As
+228	New Name
+229	Collection file name already exists, type a different name.
+230	Create New Collection
+231	A name can not contain any of the following characters:
+232	Create New Collection
+233	Name already exists, type a different name.
+234	Rename Collection
+235	My Collections
+236	My Collections
+237	My Communities
+238	Name
+239	Create New Folder
+240	Join a community
+241	North
+242	North-East
+243	East
+245	South-East
+246	South
+247	South-West
+248	West
+249	North-West
+250	AAS WorldWide Telescope can use a XBOX 360 Game controller or other compatible device to navigate the 3d viewport. Some controllers are not properly center calibrated and can cause the viewport to zoom or spin out of control. Having more than one type of controller can cause conflicts. If you have problems with the viewport, either disable the joystick control or unplug conflicting devices before launching AAS WorldWide Telescope.
+251	Use the controller
+252	Ignore the controller
+253	Latitude (Dec. deg.)
+254	E. Longitude (Dec. deg.)
+255	<Type name here>
+256	Data Set
+257	Region
+258	Elevation (Meters)
+259	Get From View
+260	Categoryâ€™s
+261	Observing Location Options
+262	Declination
+263	Right Ascension
+264	Names:
+265	Magnitude:
+266	Dimensions:
+267	Classification:
+268	Az :
+269	Alt : 
+270	Dec : 
+271	RA : 
+273	Rise:
+274	Set:
+275	Transit:
+276	Image Credits:
+277	Finder Scope
+278	Show object
+279	Research
+280	in 
+281	n/a
+282	Survey Imagery
+283	of Earth
+284	of Planet/Moon
+285	for Full Sky
+286	Panorama
+287	Study Imagery
+288	No information available
+289	Circumpolar
+290	{0} of {1}
+291	Sun
+292	Mercury
+293	Venus
+294	Mars
+295	Jupiter
+296	Saturn
+297	Uranus
+298	Neptune
+299	Pluto
+300	Moon
+301	Io
+302	Europa
+303	Ganymede
+304	Calisto
+305	Opacity
+306	Tile in View Frustum
+307	Flush Queue
+308	Type your search here
+309	Enter your search terms here.
+310	RA
+311	Dec
+312	Search View
+313	Server
+314	Plot Results
+315	Go
+316	Show the location of each result on the sky map.
+317	Solar System Options
+318	Show Solar System Objects
+319	Shows or hides the Sun, Planets and Moons
+320	Show Small Moons as Points
+321	Allows moons around distant planets to show up at lower zoom levels
+322	Show Planets Actual Size
+323	Shows Planets at correct angular size rather than as icons
+324	High Precision Update Mode
+325	Calculates exact planetary positions on each frame update
+326	Earth and Planets
+327	Show Earth Cloud Layer
+328	Shows a simulated cloud layer
+329	Show Ocean Floor
+330	Shows ocean floor contours rather than ocean surface
+331	Show Elevation Model
+332	Downloads and shows terrain details for earth and planets if available
+333	Experience
+334	Select how rapidly the view changes zoom levels
+335	Allows tradeoff of update performance against display quality for slower or faster computers
+336	Slow
+337	Fast
+338	Zoom Speed
+339	Image Quality
+340	Sharper
+341	Faster
+342	Transparent Tabs
+343	Show tabs and context panel with partial transparency.
+344	Auto Hide Context
+345	Fades out the context panel when the mouse is over the main view area
+346	Full Web Browser
+347	Launches a full browser for web links rather than the web window
+348	Auto Hide Tabs
+349	Fades out tab pane when the mouse is in the Field of View
+350	Zoom on Mouse
+351	Follows the mouse cursor when using the mouse wheel to zoom
+352	Smooth Panning
+353	Selects smooth panning rather than snapping to mouse movement
+354	Network and Cache
+355	Enter your proxy server name here.
+356	Proxy Server
+357	Port
+358	Cache Limit
+359	Manage Data Cache
+360	Use Joystick
+362	Object Name
+363	SIMBAD Search
+364	RA :   
+365	Lng:   
+366	Dec :  
+367	Lat :  
+368	N
+369	W
+370	E
+371	S
+372	Initializing Data...
+373	Solar System
+374	Milky Way
+375	Local Universe
+376	Early Universe
+377	Unspecified
+378	Select a scope...
+379	Setup
+380	Telescope Control - Not Connected
+381	Track Telescope
+382	Sync
+383	Slew
+384	Center
+385	Choose
+386	Connect
+387	Not Installed
+388	Telescope Status
+389	Telescope Control - Disconnected
+390	Disconnect
+391	Telescope Control - Connected
+392	The telescope failed to connect. Please ensure the correct telescope is chosen, and that its settings are correct.
+393	Telescope control
+394	Before you can connect, you need to choose a telescope.
+395	Unpark
+396	You must first install the ASCOM platform and a telescope driver in order to control your telescope. Click on the ASCOM logo on the Telescope Panel for more information.
+397	The telescope is parked. Unpark the scope to Sync
+398	The Telescope does not support syncing
+399	Telescope Status - Slewing
+400	Telescope Status - Parked
+401	Telescope Status - Tracking
+402	Installed
+403	Not Installed
+404	Text Editor
+405	Font Size
+406	Bold
+407	Italic
+408	Text Color
+409	Background Preview Color
+410	Text Background Options
+411	Background Options
+412	No Background
+413	Tight Fit Background
+414	Small Border
+415	Larger Border
+416	Slides
+417	Text
+418	Tour Properties
+419	Shapes
+420	Picture
+421	Video
+422	 Save
+423	Show Safe Area
+424	Run Time
+425	Paste
+426	Add New Slide
+427	Cut
+428	Copy
+429	Paste
+431	Insert New Slide
+432	Preview Tour From Here
+433	Capture New Thumbnail
+434	Set Start Camera Position
+435	Set End Camera Position
+436	Show Start Camera Position
+437	Show End Camera Position
+438	Master Slide
+439	Track Date/Time/Location
+440	Pause
+441	Play
+442	Sound/Music
+443	Images
+444	Circle
+445	Rectangle
+446	Open Rectangle
+447	Ring
+448	Line
+449	Arrow
+450	Star
+451	Slide List
+452	Bring to Front
+453	Send to Back
+454	Bring Forward
+455	Send Backward
+456	Events
+457	Volume
+458	Color/Opacity
+459	Rating:
+460	Run Length:
+461	Average rating from users
+462	Click to set your own rating.
+463	Your Rating:
+464	Close Tour
+465	Related Tours:
+466	Watch Again
+468	Author Name
+469	Tour Description
+470	Import or Replace Author Image
+471	Select the level for the tour
+472	Advanced
+473	Intermediate
+474	Beginner
+475	Tour Title *
+476	Organization URL
+477	Classification Taxonomy
+478	* Required Field
+479	Author Contact Email
+480	Catalog Objects and Keywords (semicolon separated)
+481	Classification
+482	Import Image
+483	Organization Name
+485	Please enter a title for the tour...
+486	Image Files
+487	Navigating in AAS WorldWide Telescope:\n\n    â— Move around the sky by clicking and dragging the field of view.\n    â— Zoom in/out by scrolling the mouse wheel, pressing -/+ or Page Up/Page Down.\n    â— Drag with center mouse button or hold Ctrl while dragging to rotate and tilt view.\n    â— Navigate with a XBOX 360 controller by connecting it before launching.\n    â— Click an objectâ€™s thumbnail to pan to the object. Double-clicking the objectâ€™s\n        thumbnail jumps you to the object.\n    â— Page through multiple thumbnail panes with the scroll wheel\n    â— Right-click an object to display the contextual Finder Scope for more information.\n    â— Menu Tabs have two parts: click the tabâ€™s top to open a pane;\n        click the tabâ€™s bottom to open submenus with additional functionality.
+488	Welcome to AAS WorldWide Telescope
+489	Do not show me this dialog again
+492	Tours
+493	Boundaries
+494	Figures
+495	Focused Only
+496	Equatorial Grid
+497	Ecliptic/Orbits
+498	Constellation Lines
+499	Pick focused boundary color
+500	Pick boundary color
+501	Pick figure color
+502	Edit
+503	Figure Library
+504	Overlays
+505	Pick figure color
+506	Reticle/Crosshairs
+507	Observing Location
+508	View from this location
+509	Please choose a location
+510	Altitude:
+511	Observing Time
+512	Now
+513	Real Time
+514	Do you want to add these constellation figures to your Figure Library?
+515	Figure Library Name
+516	Name already exists, type a different name.
+517	The file is not a valid AAS WorldWide Telescope Constellation Figure File
+518	Name already exists, type a different name.
+519	Default Figures
+520	Deleting this figure library will delete the constellation figures you created. Do you want to continue?
+521	Reverse Time
+522	 : Paused
+523	X 
+524	Remove Music
+525	Remove Voiceover
+526	Sound/Music(*.MP3;*.WMA)|*.MP3;*.WMA
+527	Add Music
+528	Add Voiceover
+529	Change Volume
+530	Duplicate Slide at End Position
+531	Merge Slide Show
+532	Track Time Edit
+533	Master Slide State Edit
+534	Delete Slide
+535	Paste Slide
+536	Cut Slide
+537	Resize
+538	Rotate
+539	Drag Copy
+540	Move
+541	Edit Hyperlink
+542	Url
+543	Edit Color
+544	Paste Object
+545	Text Edit
+546	Insert Picture
+547	Insert Text
+548	Insert Shape
+549	Properties Edit
+550	Move Slide
+551	Nothing to Undo
+552	Set as Foreground Imagery
+553	Set as Background Imagery
+554	Save Tour As...
+555	J2000
+556	Alt/Az
+557	Galactic
+558	Ecliptic
+559	3d Solar System
+560	Sky Overlays
+561	Lighting
+562	Orbits
+563	Cosmos
+564	Show Stars
+565	Toggle Full Screen Mode
+566	VOTable...
+567	Stereo
+568	Disabled
+569	Anaglyph (Red-Cyan)
+570	Anaglyph (Yellow-Blue)
+571	Side by Side Projection
+572	Side by Side Cross-Eyed
+573	Experimental
+574	Full Dome
+575	Dome Setup
+576	VO Cone Search / Registry Lookup...
+577	Antialiased Lines
+578	Planet Size
+579	Large
+580	Actual
+581	Earth
+582	Planet
+583	Sky
+584	Last
+585	Random
+586	Music and other Tour Resource
+587	Hyperlink
+588	Animate
+589	Link to Slide
+590	Set Next Slide
+591	Startup Look At
+592	Multi-Res Solar System Bodies
+593	Look up on NED
+594	NED Search
+595	SDSS Search
+596	Send Image To
+597	Broadcast
+598	Send Table To
+599	Link to Slide (Select below)
+600	Link to Next Slide
+601	Select Link Navigation
+602	Return to Caller
+603	Base URL
+604	From Registry
+605	NVO Registry Title Like
+606	Search Radius
+607	Verbosity
+608	From View
+609	No Link
+610	Next Slide
+611	Title
+612	ServiceType
+613	Type
+614	Publisher
+615	Wave Band
+616	Identifier
+617	Max Radius
+618	Max Rows
+619	Enter a keyword above to search the US NVO registry for Cone Search services
+620	NVO Registry Search
+621	VO Cone Search / Registry Browser
+622	Image Stack
+623	Add to Image Stack
+624	Low
+625	Medium
+626	High
+627	Duplicate Slide at End Position
+628	Merge Tour after slide...
+629	Fade In Slide Elements
+630	Flipbook Properties
+631	Shape File...
+632	Look up on SDSS
+633	Distance:
+634	RA Source
+635	Dec Source
+636	Distance Source
+637	Plot Type
+638	Type Source
+639	Size/Mag Source
+640	Save As...
+641	Marker Type
+642	AAS WorldWide Telescope - VO Table Viewer
+643	Undo:
+644	Redo:
+645	Add Collection as Tour Stops
+646	Collections
+647	Share on Facebook
+648	Both
+649	Forget me
+650	My Wall
+651	Their Wall
+652	Fetching friends, please wait...
+653	Asteroids
+654	Planets
+655	Show Layer Manager
+656	Start Listener
+657	Detach Main View to Second Monitor
+658	Regional Data Cache...
+659	Full Screen Tours
+660	Shared Data Cache Settings
+661	Shared Data Cache URL (leave empty for none)
+662	New Community
+663	Reset
+664	Layers
+665	Auto Loop
+666	Time Series
+667	Time Scrubber
+668	Value
+669	Multi-Channel Calibration
+670	Send Layers to Projector Servers
+671	Show On-Screen Controls
+672	Save Current View Image to File...
+673	Render to Video...
+674	New Reference Frame
+675	New Layer Group
+676	Enter Layer Group Name
+677	Layer Group
+678	This will delete this reference frame and all nested reference frames and layers. Do you want to continue?
+680	Delete Reference Frame
+681	This will delete all current reference frames and all layers and reset layers to startup defaults. Are you sure you want to do this?
+682	Reset layers Manager
+683	Lifetime
+684	Move to Top
+685	Move Up
+686	Move Down
+687	Move to Bottom
+688	AAS WorldWide Telescope failed to complete the last startup attempt. Would you like AAS WorldWide Telescope to attempt an auto reset of the data directory?
+689	AAS WorldWide Telescope encountered an error starting up. Would you like AAS WorldWide Telescope to attempt a reset of the data directory and restart?
+690	AAS WorldWide Telescope has encountered an error. Click OK to restart or Cancel to attempt to ignore the error and continue
+691	This Language Pack has an optional regional data cache that will allow improved performance when in that region. Do you wish to use it?
+692	Use Regional Data Cache
+693	AAS WorldWide Telescope must restart to load a new language file. Do you want to restart now?
+694	Restart Now?
+695	Could Not Open VO Table File. Please ensure it is valid
+696	That ID currently exists. Please choose a unique ID
+697	Could not open the file. Ensure it is a valid AAS WorldWide Telescope configuration file.
+698	Open Configuration File
+699	This will clear existing blend polygons for this projector and create new ones by transferring edge points from align. This operation cannot be undone, are you sure you want to proceed?
+700	Transfer from Edges
+701	Projectors
+702	Points
+703	Point Weight
+704	Blend Point
+705	Iterations
+706	Blur Size
+707	Make Blend Maps
+708	Solve Z
+709	Solve Y
+710	Solve X
+711	Solve Roll
+712	Solve Heading
+713	Solve Pitch
+714	Solve Aspect
+715	Solve Fov
+716	Solve Radial Distortion
+717	Make Warp Maps
+718	Use Constraints
+719	Average Error
+720	Solve Alignment
+721	Screen Type
+722	Software Update
+723	Send New Maps
+724	Tilt
+725	Screen Radius
+726	Outlines
+727	Black Background
+728	Dome Grid
+729	Calibration Screens
+730	Load
+731	Color Correction
+732	Red
+733	Green
+734	Blue
+736	Constraints
+737	Edges
+738	Are you sure you want to remove this edge and all it's points? This operation cannot be undone.
+739	Delete Edge
+740	Are you sure you want to remove all constraints from this projector? This operation cannot be undone.
+741	Delete Constraints
+742	Are you sure you want to remove all points from the blend mask? This operation cannot be undone.
+743	The current Solution can't be improved on by further iteration with from the current alignment. Either reset the initial estimated parameters for the projectors, or this will be the best alignment achievable.
+744	Alignment Solver
+745	Would you like to use the solved Projector parameters? You can always use the 'Copy Solved' button in the Projector Edit to do this manually.
+746	Use Solved Parameters as Projector Defaults
+747	Building Maps
+748	Building Warp Maps
+749	Warp
+750	Would you like to build new maps with the current parameters? Answering 'No' will send the existing maps
+751	Build new Maps
+752	Building Blend Maps
+753	Building Blend
+754	Solve Distortion
+755	Paste Orbital Elements from TLE
+756	The clipboard does not appear to contain a valid TLE set. Copy the contents of a Two Line Elements (TLE) set from your source to the clipboard in plain text and click paste again
+757	You must select all appropriate columns before plotting Data
+758	Check your values. You must enter valid numbers and a filename
+759	Ok
+760	Left Projector
+761	Right Projector
+762	Edge Properties
+763	Altitude
+764	Constraint Type
+765	Azimuth
+766	Weight
+767	GroundTruthPointProperties
+768	Off-Axis X
+769	Off-Axis Y
+770	FOV
+771	Aspect
+772	Projection
+773	X
+774	Y
+775	Z
+776	Pos
+777	Rot
+778	Transform
+779	Pitch
+780	Heading
+781	Roll
+782	ID
+783	Projector List
+784	Projector
+785	Solved
+786	Copy Solved
+787	Copy View
+788	Send Update
+789	Projector Properties
+790	Align
+791	Blend
+792	Rotation Period (days)
+793	Zero Rotation (Julian Day)
+794	Mean Radius (meters)
+795	Oblateness (Percent)
+796	Orbit/Point Color
+797	Show as Point at Distance
+798	Show Orbit Path
+799	Scale (Meters to Units)
+800	Station Keeping
+801	Select the Latitude, Longitude and Altitude
+802	Altitude (Meters)
+803	Longitude (Decimal Degrees)
+804	Latitude (Decimal Degrees)
+805	Semimajor Axis (a)
+806	Eccentricity (e)
+807	Inclination
+808	Argument of periapsis
+809	Longitude of the Ascending Node
+810	Mean anomaly at epoch
+811	Epoch (Julian Date)
+812	Mean Daily Motion
+813	A Keplarian orbit is an elliptical orbit defined by at least 6 parameters.  There are some variations in how those parameters are described, but most orbits can be translated into the terms below.
+814	Semimajor Axis Units
+815	Paste TLE
+816	Trajectory Reference Frames are based on a time series table of Julian Date/Times and heliocentric X,Y,Z coordinates in the referenced units. The reference frame will orient itself on the path described based on interpolating positions for the current time.
+817	Units
+818	Import Path
+819	End Date Range
+820	Begin Date Range
+821	Trajectory files
+822	This wizard will guide you through the process of creating a new reference frame. A reference frame allows you to have local coordinates, scale and time relative to the rest of the universe. The reference can be based on fixed offsets, spherical coordinates, Keplarian orbits or a interpolated values from a list of date/time and position offsets.
+823	Offset Type
+824	Reference Frame Name
+825	Select the Columns for Cartesian coordinates for X, Y and optionally Z. The reverse checkbox may be used to match the sign vector for each axis. 
+826	Z Axis Column (optional)
+827	Y Axis Column
+828	X Axis Column
+829	Reverse X
+830	Reverse Y
+831	Reverse Z
+832	None
+833	A color map allows you to vary the color of a marker based on the value of a a selected column using colors for discrete domain values, selecting colors to represent ranges, or using gradients to map a range of colors smoothly to a range of values.
+834	Color Map Type
+835	Color Map Column
+836	Use the drop-downs to select the columns that specify the coordinates, select the altitude/depth mapping type, and optionally the column that specifies altitude/depth and the units in which the data is specified, Positive depth values offset downward. Positive altitude values offset upward.
+837	Spatial Coordinates
+838	Altitude / Depth / Distance
+839	Latitude
+840	Longitude
+841	The Start and End Dates used with a Time decay allow you to visualize time series data as animation using the Time controls. The time decay controls how long it takes to fade out an event after it triggers. Select the optional start and end data columns to enable this feature and get a preview of the date range for the column.
+842	End Date/Time
+843	Start Date/Time
+844	Time Decay
+845	Your data is now ready for viewing. If you need to change any options just right-click on the layer and select the Properties option on the context menu.
+846	Hover Text Column
+847	You can select which data column you want shown when hovering over a marker, and optionally add a hyperlink to allow a user to drill into related data thru a web page.
+848	Select a Marker
+849	Marker Mix
+850	Marker Column
+851	Select the way you want to organize markers and their shapes. You can use one marker type for all the data or select a column to show different markers for ranges of values, or discrete values. 
+852	Show Far Side Markers
+853	Use the scale type to specify how you want the markers displayed. You can have markers display relative to the screen, invariant of your zoom, or have them scale relative to the coordinates system. You can optionally select a column to control the scale.  Use the scale factor to adjust the relative unit values of the  column to the output marker size.
+854	Scale Factor
+855	Scale Type
+856	Size/Magnitude Column
+857	Scale Relative
+858	This wizard will guide you through the process of importing your data for visualization. On this first step enter a friendly name for your layer, this is how it will appear in the Layer Manager. Select a reference frame for the coordinates in your data. This determines how WWT will plot your data and where.
+859	Color Correction: 
+860	Color Correction: (No Selection)
+861	Rotation
+862	Ground Overlay Properties
+863	Histogram
+864	Ctrl+E               Toggle Edit Mode\nMouse Drag     Move Image\nShift+Drag        Scale Image\nCtrl+Drag          Rotate Image\nAlt+                   Fine Adjustment Scale/Rotate\nRight Click        Pick Pivot + Toggle Pivot Mode\nC                       Centers Image to View\n\nPivot Mode Instructions:\n* Align a star in both image and background.\n* Right Click on centroid of aligned star to select pivot.\n* Left Drag on a second star and align it to background.\n* Right Click to exit pivot mode.
+865	Image Alignment
+866	AAS WorldWide Telescope - Take it home with you at http://www.worldwidetelescope.org
+867	Start DateTime
+868	End DateTime
+869	Fade In/Out Time
+870	Fade Type
+871	Layer Lifetime
+872	Translation Y
+873	Translation Z
+874	Scale Y
+875	Translation X
+876	Scale Z
+877	Scale X
+878	Smooth Normals
+879	Flip Textures
+880	Uniform Scaling
+881	3d Model Properties
+882	Wait for all downloads
+883	Filename Out (Use {NNNN} notation for auto frame numbering)
+884	Browse
+885	Output Format
+886	FPS
+887	Render
+888	Total Frames
+889	Start Frame
+890	Dome Master
+891	Render Tour to Video
+892	Standard Definition
+893	High Definition 720P
+894	High Definition 1080P
+895	Dome Master 1k
+896	Dome Master 2k
+897	Dome Master 3k
+898	Dome Master 4k
+899	Custom
+900	Rendering frame {0} of {1}.
+901	RenderProgress
+902	Web Mapping Service URL
+903	Layers and Styles
+904	Server List
+905	<Type Server Name Here>
+906	Server Name
+907	Add Server
+908	Get Layers
+909	WMS Layers
+910	Not loaded -  Click Get Layers to download now
+911	Finish
+912	Next
+913	Back
+914	The URL does not appear to be well formed
+915	Can't access NVO Registry at this time
+916	Welcome to WWT Â¦ Mars
+917	Data Visualization Layer
+918	Welcome
+919	Position
+920	Scale
+921	Markers
+922	Color Map
+923	Date Time
+924	Hover Text
+925	Your data is ready to view
+926	Reference Frame
+927	Trajectory
+928	General Options
+929	Your Reference Frame is Complete
+930	Done
+931	Distance
+932	Lat/Lng
+933	The Mean allows you to specify the primary bounds of the reference frame such as the surface height of a planet, or the bounding sphere of a 3d model of a spacecraft. Rotation period and zero rotation day allow the specification of a rotating frame of reference. Heading Pitch and roll allow for orientation relative to the parent reference frame. Station Keeping automatically orients the reference frame to track the Earth rather than tumble in orbit.
+934	Never Rises
+935	Never Sets
+936	Restore Default Settings
+937	Clear Cache
+938	Download Queue
+939	Layer Name
+940	CoordinatesType
+941	Altitude / Depth Column
+942	Dome Tilt
+943	Dome Type
+944	Custom Warp Filename
+945	Large Textures
+946	Up Level
+947	The File does not appear to be a Valid Trajectory File.
+948	Astronomical Image...
+949	Layer Manager
+950	Lng
+951	Lat
+952	Lat:
+953	Show/Hide Layer Manager
+954	This URL does not seem to be a valid OData feed
+955	Enter OData feed URL
+956	Add OData feed as Layer
+957	VO Table Viewer
+958	There are layers with the same name. Overwrite existing layers?
+959	AAS WorldWide Telescope
+960	Save...
+961	
+962	Sign In
+963	Forget Me
+964	Windows Live ID
+965	Password
+966	Windows Live ID Sign In
+967	Sign In to:     AAS WorldWide Telescope Communities
+968	Remember me on this computer
+969	Forgot your password?
+970	Remember my Password
+971	You are logging into AAS WorldWide Telescope Communities
+972	Sign up for a Windows Live ID
+973	Login Canceled
+974	The Login Timed Out.
+975	Login failed.
+976	AAS WorldWide Telescope Layer File(*.wwtl)|*.wwtl
+977	Separation: 
+978	Portable Network Graphics(*.png)|*.png|JPEG Image(*.jpg)|*.jpg
+979	Images(*.JPG;*.PNG;*.TIF;*.TIFF;*.FITS;*.FIT)|*.JPG;*.PNG;*.TIF;*.TIFF;*.FITS;*.FIT
+980	Tour Layers
+981	Expand
+982	Collapse
+983	Publish to Community...
+984	Dynamic Data
+985	Auto Refresh
+986	Refresh Now
+987	New WMS Layer
+988	New Great Circle
+989	Import Orbital Elements
+990	Save Layers
+991	Publish Layers to Community
+992	AAS WorldWide Telescope Layer File
+993	AAS WorldWide Telescope Layer File(*.wwtl)
+994	Orbital Elements File (TLE)
+995	Show on Community Web Site
+996	Edit on Community Web Site
+997	Delete from Community Web Site
+998	Remove Subscription of this Community
+999	Do you really want to permanently delete this item from your community?
+1000	Do you really want to unsubscribe this community link on this computer?
+1001	Add Children to Image stack
+1002	Could not connect to Communities website at this time.
+1003	The image file did not download or is invalid.
+1004	Close layers loaded with the tour as well?
+1005	Percentage
+1006	Line Width
+1007	<< Get From View
+1008	GreatCircleProperties
+1009	Data Source Url
+1010	Broadcast Screen
+1011	Frame Rate
+1012	When used in a Multi-Channel environment you can broadcast the screen contents from local applications to show up on the projected display as a window.
+1013	ScreenBroadcast
+1014	10 Hertz
+1015	5 Hertz
+1016	2 Hertz
+1017	1 Hz
+1018	2 Seconds
+1019	5 Seconds
+1020	10 Seconds
+1021	Layers...
+1022	Publish Tour to Community...
+1023	Screen Broadcast...
+1024	Remote Access Control...
+1025	Sign Out
+1026	Minor Orbits
+1027	Show Earth Sky
+1028	Auto Update
+1029	Animation Tween Type
+1030	Linear
+1031	Ease In/Out
+1032	Ease In
+1033	Ease Out
+1034	Exponential
+1035	Slide Default
+1036	Vertical Align
+1037	Horizontal Align
+1038	Align Centers
+1039	Align Tops
+1040	Align Right
+1041	Align Left
+1042	Align Bottoms
+1043	AAS WorldWide Telescope must restart for new settings to take effect. Do you want to restart now?
+1044	Dome Master 8k
+1045	Downloading ({0} of {1})
+1046	Download Canceled
+1047	Download Complete
+1048	The imageset uses {0}MB of disk space.
+1049	AAS WorldWide Telescope Layer
+1051	There was a problem capturing the screen contents
+1052	Overlay Item List
+1053	Overlay List
+1054	Don't Parse
+1055	Fits Image(*.FIT)|*.FIT
+1056	WWT Cabinet File(*.cabinet)|*.cabinet
+1057	Show Overlay List
+1058	Send Tour to Projector Servers
+1059	Automatic Tour Sync with Projector Servers
+1060	Find Earth Based Location...
+1061	Multi-Sample Antialiasing
+1062	Four Samples
+1063	Eight Samples
+1064	Lock Vertical Sync
+1065	Target Frame Rate
+1066	Unlimited
+1067	60 FPS
+1068	30 FPS
+1069	24 FPS
+1070	Monochrome Style
+1071	Controller Setup...
+1072	Tile Loading Throttling
+1073	15 tps
+1074	30 tps
+1075	60 tps
+1076	120 tps
+1077	Save Cache as Cabinet File...
+1078	Restore Cache from Cabinet File...
+1079	Projector Server List
+1080	Grids
+1081	Axis Labels
+1082	Galactic Grid
+1083	AltAz Grid
+1084	Ecliptic Grid
+1085	Ecliptic Overview
+1086	Month Labels
+1087	Precession Chart
+1088	Constellations
+1089	Constellation Figures
+1090	Constellation Boundaries
+1091	Constellation Names
+1092	Constellation Pictures
+1093	Cosmos (SDSS Galaxies)
+1094	Milky Way (Dr. R. Hurt)
+1095	Stars (Hipparcos, ESA)
+1096	Planets (NASA, ETAL)
+1097	Planetary Orbits
+1098	Moon & Satellite Orbits
+1099	Asteroids (IAU MPC)
+1100	Lighting and Shadows
+1101	2D Sky
+1102	Show Solar System
+1103	Field of View Indicators
+1104	Cloud Layer
+1105	Use 8k Cloud Texture
+1106	Elevation Model
+1107	Sky & Atmosphere
+1108	Cutaway View
+1109	Dome
+1110	Fade to black
+1111	Fade Dome Only
+1112	Fade to logo
+1113	Fade to gradient
+1114	Screen Broadcast
+1115	Filter
+1116	Color
+1117	Import...
+1118	Include
+1119	Exclude
+1120	New Filter...
+1121	Filter name
+1122	A Time
+1123	B Time
+1124	Hold Time
+1125	Transitions
+1126	Audio Filename
+1127	Fade Out
+1128	Fade In
+1129	Begin
+1130	Audio Properties
+1131	Show on Console
+1132	Cluster ID : 
+1133	Show Details
+1134	Projector Servers
+1135	Node ID: 
+1136	Pause Rendering
+1137	Restart
+1138	Shutdown
+1139	Launch
+1140	Tiled WMS
+1141	Add As Layer
+1142	Abstract
+1143	New Dynamic layer
+1144	Great Circle Route
+1145	Place Name or Address
+1146	Location Search - Powered by Bing
+1147	There was nothing found with the given text.
+1148	Change your search text and try again.
+1149	Two-sided
+1150	Image URL
+1151	Device Name Here
+1152	Device Type
+1153	MIDI Controller
+1154	Status
+1155	Connected
+1156	Allows Status Update
+1157	Controller Properties
+1158	Not Found
+1159	Control
+1160	Chan
+1161	Binding
+1162	MIDI Devices
+1163	Control Bindings
+1164	Binding Target Type
+1165	Bind Type
+1166	Property
+1167	Monitor
+1168	Repeat
+1169	Controller Setup
+1170	WWT MIDI Controller Map (*.wwtmm)|*.wwtmm
+1171	This will remove this control map. Are you sure you want to do this?
+1172	Remove Control Map
+1173	Listening for unmapped controls: Activate Control now.
+1174	Control Type
+1175	New Control
+1176	WWT Calibration files (*.wtc)|*.wtc
+1177	Stop Solving
+1178	Dome Warp Files
+1179	Andromeda
+1180	Antlia
+1181	Apus
+1182	Aquarius
+1183	Aquila
+1184	Ara
+1185	Aries
+1186	Auriga
+1187	Bootes
+1188	Caelum
+1189	Camelopardalis
+1190	Cancer
+1191	Canes Venatici
+1192	Canis Major
+1193	Canis Minor
+1194	Capricornus
+1195	Carina
+1196	Cassiopeia
+1197	Centaurus
+1198	Cepheus
+1199	Cetus
+1200	Chamaeleon
+1201	Circinus
+1202	Columba
+1203	Coma Berenices
+1204	Corona Australis
+1205	Corona Borealis
+1206	Corvus
+1207	Crater
+1208	Crux
+1209	Cygnus
+1210	Delphinus
+1211	Dorado
+1212	Draco
+1213	Equuleus
+1214	Eridanus
+1215	Fornax
+1216	Gemini
+1217	Grus
+1218	Hercules
+1219	Horologium
+1220	Hydra
+1221	Hydrus
+1222	Indus
+1223	Lacerta
+1224	Leo
+1225	Leo Minor
+1226	Lepus
+1227	Libra
+1228	Lupus
+1229	Lynx
+1230	Lyra
+1231	Mensa
+1232	Microscopium
+1233	Monoceros
+1234	Musca
+1235	Norma
+1236	Octans
+1237	Ophiuchus
+1238	Orion
+1239	Pavo
+1240	Pegasus
+1241	Perseus
+1242	Phoenix
+1243	Pictor
+1244	Pisces
+1245	Piscis Austrinus
+1246	Puppis
+1247	Pyxis
+1248	Reticulum
+1249	Sagitta
+1250	Sagittarius
+1251	Scorpius
+1252	Sculptor
+1253	Scutum
+1254	Serpens Caput
+1255	Serpens Cauda
+1256	Sextans
+1257	Taurus
+1258	Telescopium
+1259	Triangulum
+1260	Triangulum Australe
+1261	Tucana
+1262	Ursa Major
+1263	Ursa Minor
+1264	Vela
+1265	Virgo
+1266	Volans
+1267	Vulpecula
+1268	No Custom Filters to Delete
+1269	Delete Custom Filter
+1270	allowUnconstrainedTiltToolStripMenuItem
+1271	Domain Column
+1272	Sort Order
+1273	Alpha Ascending
+1274	Alpha Descending
+1275	Numeric Increasing
+1276	Numeric Decreasing
+1277	Copy Coordinates
+1278	Loading...
+1279	Remove from Timeline
+1280	Add Keyframe
+1281	Delete Keyframes
+1282	Drag Keys on Timeline
+1283	At least one key in the timeline was overwritten by the moved key(s). Use ctrl-Z to undo if this was not desired.
+1284	Add Keyframes
+1285	Jump to End
+1286	Delete Key
+1287	Add Key
+1288	Jump to Begin
+1289	Play Backward
+1290	Add to Timeline
+1291	Scale/Histogram
+1292	Show Graph Tool
+1293	Bar Chart Columns
+1294	Background Image Set
+1295	Bar chart by Domain Values
+1296	Time Chart
+1297	Current Filters
+1298	Track this frame
+1299	Fly Here
+1300	New Lat/Lng Grid
+1301	Add Minor Planet
+1302	Minor planet name or designation
+1303	The designation was not found or the MPC service was unavailable
+1304	This file does not seem to be valid
+1305	Show Welcome Tips
+1306	Allow Unconstrained Tilt
+1307	Alternating Lines Even
+1308	Alternating Lines Odd
+1309	Oculus Rift
+1310	Detach Main View to Third Monitor
+1311	Full Dome Preview
+1312	Xbox Controller Setup...
+1313	Timeline Editor
+1314	ISS Model  (Toshiyuki Takahei)
+1315	Right Handed
+1316	Button Type
+1317	Button Properties
+1318	Left Shoulder
+1319	Left Trigger
+1320	Right Trigger
+1321	Right Shoulder
+1322	A, B, X, Y Buttons
+1323	Right Thumb
+1324	D-Pad
+1325	Left Thumb
+1326	Start
+1327	Mode
+1328	Export
+1329	Import
+1330	Use Mode Dependent Mappings
+1331	Use Custom Mappings
+1332	Xbox 360 Controller Configuration
+1333	Top
+1334	Bottom
+1335	Left
+1336	Right
+1337	Horizontal
+1338	Vertical
+1339	Centered
+1340	Slide
+1341	Anchor Full Dome
+1342	Insert Flipbook
+1343	Show Timeline Editor
+1344	Show Slide Numbers
+1345	Select All
+1346	Create Timeline
+1347	Show Timeline
+1348	Transition Function
+1349	Time
+1350	Key Properties
+1351	Multiple
+1352	Key Properties Edit
+1353	Warp from flat screen
+1354	Dome Alt
+1355	DomeAz
+1356	Face North in Sky Mode
+1357	Scriptable Parameters
+1358	Alt
+1359	Az
+1360	Dome Preview
+1361	Do you want to trim the timeline and delete keys past the new duration (Yes) or scale keys to the new duration (No)?
+1362	Trim or scale timeline
+1363	Extend or scale timeline
+1364	Do you want to extend the timeline (Yes) or scale it (No)?
+1365	Trim Timeline
+1366	Scale Timeline
+1367	Extend Timeline
+1368	Edit Duration
+1369	Paste Keys
+1370	Copy Property Keyframes
+1371	Copy Selected Keyframes
+1372	Paste Keyframes
+1373	Paste at current time
+1374	Choose a unique name
+1375	Cosmic Microwave Background (Planck)
+1376	Filename
+1377	Points
+1378	Add Quiz Action

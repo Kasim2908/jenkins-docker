@@ -1,0 +1,3 @@
+@echo off
+echo Opening Stardust in your default browser...
+start http://localhost:8000/

@@ -1,0 +1,42 @@
+<ul class="dropdown-menu" role="menu" id="researchMenu">
+  <li>
+    <a href="javascript:void(0)"><span localize="Name"></span>: {{menuContext.get_name()}}</a>
+  </li>
+
+  <li class="dropdown-submenu">
+    <a href="javascript:void(0)" localize="Information"></a>
+    <ul class="dropdown-menu" style="height:126px"> <!-- 28px per item + 2*7px top/bottom padding -->
+      <li><a href="//wikipedia.org/wiki/Special:Search?search={{menuContextNameForQueryString}}" target="wikipedia" localize="Look up on Wikipedia"></a></li>
+      <li><a href="//ui.adsabs.harvard.edu/search/q=object:%22{{menuContextNameForQueryString}}%22" target="ads" localize="Look up on SAO/NASA ADS"></a></li>
+      <li><a href="//simbad.u-strasbg.fr/simbad/sim-id?Ident={{menuContextNameForQueryString}}" target="simbad" localize="Look up on SIMBAD"></a></li>
+      <li><a href="//ned.ipac.caltech.edu/cgi-bin/nph-imgdata?objname={{menuContextNameForQueryString}}" target="ned" localize="Look up on NED"></a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown-submenu">
+    <a href="javascript:void(0)" localize="Imagery"></a>
+    <ul class="dropdown-menu" style="height:67px;">
+      <li>
+	<a href="javascript:void(0)" localize="Get DSS Image"></a>
+      </li>
+      <li>
+	<a href="javascript:void(0)" localize="Get SDSS Image"></a>
+      </li>
+    </ul>
+  </li>
+
+  <li role="presentation" class="divider"></li>
+
+  <li>
+    <a ng-click="setBackgroundImage(menuContext)" href="javascript:void(0)" localize="Set as Background Imagery"></a>
+  </li>
+
+  <li>
+    <a ng-click="setForegroundImage(menuContext)" href="javascript:void(0)" localize="Set as Foreground Imagery"></a>
+  </li>
+
+  <li role="presentation" class="divider"></li>
+
+  <li><a href="javascript:void(0)" ng-click="showProperties()" localize="Properties"></a></li>
+  <!--<li><a href="javascript:void(0)" localize="Copy Shortcut"></a></li>-->
+</ul>
