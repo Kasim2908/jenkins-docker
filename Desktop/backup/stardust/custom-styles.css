@@ -1,0 +1,42 @@
+/* Custom styles for WorldWide Telescope */
+
+/* Custom menu item styling */
+.custom-menu-item {
+    background-color: #ff6b35 !important;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+/* Custom title styling */
+.custom-title {
+    color: #ff6b35;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Custom button styling */
+.custom-button {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+}
+
+/* Custom navbar styling */
+.custom-navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-bottom: 2px solid #ff6b35;
+}
+
+/* Custom mobile menu styling */
+.custom-mobile-menu {
+    background-color: rgba(102, 126, 234, 0.9);
+    border: 1px solid #ff6b35;
+}

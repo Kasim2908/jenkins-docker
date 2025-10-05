@@ -1,0 +1,13 @@
+{
+  "name": "stardust-web-client",
+  "version": "1.0.0",
+  "description": "Stardust - Web Client for astronomical data visualization",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site ready for deployment'"
+  },
+  "keywords": ["astronomy", "telescope", "visualization"],
+  "author": "Stardust Team",
+  "license": "MIT"
+}

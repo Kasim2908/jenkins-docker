@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stardust — Web Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+
+    <meta property="og:site_name" content="Stardust" />
+    <meta property="og:url" content="https://stardust.org/" />
+    <meta property="og:title" content="Stardust" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Stardust is a tool for showcasing astronomical data and knowledge." />
+    <meta property="og:image" content="//web.wwtassets.org/webclient/images/wwtlogo.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <meta name="title" content="Stardust" />
+    <meta name="description" content="Stardust is a tool for showcasing astronomical data and knowledge." />
+
+    <link rel="icon" href="favicon.ico"/>
+
+    <link href="//web.wwtassets.org/webclient/css/webclient.min.css?v=f7a3bf5" rel="stylesheet" />
+    <link href="//web.wwtassets.org/webclient/css/angular-motion.css?v=f7a3bf5" rel="stylesheet" />
+    <link href="//web.wwtassets.org/webclient/css/introjs.css?v=f7a3bf5" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/style/jquery.jscrollpane.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="custom-styles.css" rel="stylesheet"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWNE29K5CB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-YWNE29K5CB');
+    </script>
+
+    <style>
+      /* Hide loading popups */
+      #loadingModal, #folderLoadingModal, .mobile-loading {
+        display: none !important;
+      }
+      
+      /* Hide intro tutorial */
+      .introjs-overlay, .introjs-helperLayer, .introjs-tooltip {
+        display: none !important;
+      }
+      
+      /* Hide blue dotted line at startup */
+      .wwt-dotted-line, .dotted-line, .startup-line,
+      .grid-line, .coordinate-line, .reference-line,
+      canvas[style*="border"], canvas[style*="dotted"],
+      *[style*="border-style: dotted"], *[style*="border: dotted"] {
+        display: none !important;
+      }
+      
+      /* Hide any dotted borders globally */
+      * {
+        border-style: none !important;
+      }
+      
+      canvas {
+        border: none !important;
+      }
+      
+      /* Hide all UI except explore panel and navigation arrows */
+      #ribbon, .wwt-tabs, .context-panel, .fov-panel, .controls, .thumbnails.nearby-objects {
+        display: none !important;
+      }
+      
+      /* Hide original navigation arrows from main screen */
+      .wwt-nav-arrows, .nav-arrows, .navigation-arrows, 
+      .wwt-navigation, .nav-controls, .arrow-nav {
+        display: none !important;
+      }
+      
+      /* Hide top right element from main screen */
+      .wwt-logo, .logo-container, .top-right-logo,
+      .header-logo, .brand-logo, .wwt-brand {
+        display: none !important;
+      }
+      
+      /* Enable 360 rotation */
+      #WWTCanvas {
+        pointer-events: auto !important;
+        touch-action: none !important;
+      }
+      
+      /* Hide top panel container but show explore panel */
+      .top-panel {
+        display: block !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      
+      /* Hide other panels except explore */
+      #toursPanel, #searchPanel, #communityPanel,
+      .top-panel > div:not(.explore-panel) {
+        display: none !important;
+      }
+      
+      /* Force explore panel to show */
+      .explore-panel {
+        display: block !important;
+      }
+      
+      /* Remove neo-brutalism navigation */
+      .sidebar-nav-arrows {
+        display: none !important;
+      }
+      
+      /* Remove neo-brutalism top element */
+      .sidebar-top-element {
+        display: none !important;
+      }
+      
+      /* Tiny Side Panel */
+      .explore-panel {
+        position: fixed !important;
+        left: -250px !important;
+        top: 20px !important;
+        width: 250px !important;
+        max-height: 400px !important;
+        background: #fff !important;
+        border: 1px solid #ddd !important;
+        border-radius: 4px !important;
+        padding: 10px !important;
+        overflow-y: auto !important;
+        z-index: 99999 !important;
+        transition: left 0.3s ease !important;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.15) !important;
+      }
+      
+      .panel-open .explore-panel {
+        left: 0 !important;
+      }
+      
+      .panel-open #WorldWideTelescopeControlHost {
+        margin-left: 0 !important;
+        width: 100vw !important;
+      }
+      
+      .panel-open .panel-toggle {
+        left: 255px !important;
+      }
+
+      
+      /* Toggle Arrow Button */
+      .panel-toggle {
+        position: fixed !important;
+        left: 5px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 20px !important;
+        height: 40px !important;
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+        color: #666 !important;
+        font-size: 12px !important;
+        cursor: pointer !important;
+        z-index: 10000 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.3s ease !important;
+        border-radius: 0 4px 4px 0 !important;
+        box-shadow: 1px 0 3px rgba(0,0,0,0.1) !important;
+      }
+      
+      .panel-toggle:hover {
+        background: #f0f0f0 !important;
+        border-color: #999 !important;
+      }
+      
+      /* Adjust telescope view */
+      #WorldWideTelescopeControlHost {
+        margin-left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        transition: all 0.3s ease !important;
+      }
+      
+      #WWTCanvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      
+      /* Ensure toggle button stays visible */
+      .panel-toggle {
+        box-shadow: 3px 3px 0 rgba(0, 255, 255, 0.4) !important;
+      }
+      
+      /* Remove horizontal breadcrumb bar */
+      .explore-panel > span.bc {
+        display: none !important;
+      }
+      
+      .explore-panel .bc {
+        display: block;
+        background: #f8f8f8;
+        color: #333;
+        padding: 8px 12px;
+        margin: 0;
+        font-weight: normal;
+        text-transform: none;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        cursor: pointer;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 13px;
+        transition: background-color 0.15s ease;
+        height: 32px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .explore-panel .bc:last-child {
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .explore-panel .bc:hover {
+        background: #e6e6e6;
+        transform: none;
+        box-shadow: none;
+      }
+      
+      /* Remove top horizontal bar completely */
+      .explore-panel > br:first-of-type {
+        display: none !important;
+      }
+      
+      .explore-thumbs {
+        display: block !important;
+        margin-top: 15px !important;
+        border: 1px solid #ddd !important;
+        border-radius: 4px !important;
+        overflow: hidden !important;
+      }
+      
+      .ribbon-thumbs {
+        background: #fff !important;
+        border: 1px solid #ddd !important;
+        border-bottom: none !important;
+        padding: 8px 12px !important;
+        transition: background-color 0.1s ease !important;
+        cursor: pointer !important;
+        height: auto !important;
+        min-height: 32px !important;
+        display: block !important;
+        margin: 0 !important;
+        position: relative !important;
+      }
+      
+      .ribbon-thumbs:last-child {
+        border-bottom: 1px solid #ddd !important;
+      }
+      
+      /* Remove extra spacing and blocks */
+      .explore-thumbs > div:empty,
+      .explore-thumbs > br {
+        display: none !important;
+      }
+      
+      .ribbon-thumbs:hover {
+        background: #e6e6e6 !important;
+      }
+      
+      .ribbon-thumbs:active {
+        background: #d4edda !important;
+      }
+      
+      .ribbon-thumbs .thumbnail {
+        background: transparent !important;
+        border: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      
+      .ribbon-thumbs .thumbnail {
+        background: transparent !important;
+        border: none !important;
+      }
+      
+      .ribbon-thumbs .thumbnail img {
+        display: none !important;
+      }
+      
+      .ribbon-thumbs .thumbnail {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: relative !important;
+      }
+
+      
+      .ribbon-thumbs label {
+        color: #333 !important;
+        font-weight: normal !important;
+        text-transform: none !important;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+        font-size: 13px !important;
+        text-align: left !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.4 !important;
+        width: 100% !important;
+        cursor: pointer !important;
+        word-wrap: break-word !important;
+      }
+      
+      .ribbon-thumbs:hover label {
+        color: #333 !important;
+      }
+      
+      .wwt-pager {
+        display: none !important;
+      }
+      
+      /* Remove neo-brutalism pager */
+      .sidebar-pager {
+        display: none !important;
+      }
+      
+      .wwt-pager a {
+        color: #333 !important;
+        font-weight: normal !important;
+        margin: 0 5px !important;
+      }
+      
+      .tn-expander {
+        display: none !important;
+      }
+      
+      /* Default Windows scrollbar */
+      .explore-panel::-webkit-scrollbar {
+        width: 12px;
+      }
+      
+      .explore-panel::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      .explore-panel::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 6px;
+      }
+      
+      .explore-panel::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      
+      /* Tiny Context Info - Bottom Right - FIXED */
+      #contextmenu {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 200px !important;
+        max-width: 200px !important;
+        background: #fff !important;
+        border: 2px solid #000 !important;
+        padding: 10px !important;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+        font-family: 'Times New Roman', serif !important;
+        font-size: 12px !important;
+        z-index: 99999 !important;
+        color: #000 !important;
+        font-weight: normal !important;
+        line-height: 1.4 !important;
+      }
+      
+      #popoutmenu {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 200px !important;
+        background: #fff !important;
+        border: 2px solid #000 !important;
+        padding: 10px !important;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+        font-family: 'Times New Roman', serif !important;
+        font-size: 12px !important;
+        z-index: 99999 !important;
+        color: #000 !important;
+      }
+      
+      #contextmenu img, #popoutmenu img {
+        display: none !important;
+        visibility: hidden !important;
+      }
+      
+      #contextmenu strong, #popoutmenu strong {
+        color: #000 !important;
+        font-weight: bold !important;
+        text-transform: none !important;
+        font-size: 12px !important;
+        display: inline !important;
+        margin: 0 !important;
+      }
+      
+      .context-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        margin-bottom: 8px !important;
+        border-bottom: 1px solid #ccc !important;
+        padding-bottom: 5px !important;
+      }
+      
+      .context-close {
+        background: none !important;
+        border: none !important;
+        font-size: 16px !important;
+        cursor: pointer !important;
+        color: #666 !important;
+        padding: 0 !important;
+        width: 20px !important;
+        height: 20px !important;
+      }
+      
+      .context-search {
+        display: flex !important;
+        align-items: center !important;
+        margin-top: 8px !important;
+        padding-top: 5px !important;
+        border-top: 1px solid #ccc !important;
+      }
+      
+      .search-icon {
+        font-size: 14px !important;
+        color: #666 !important;
+        margin-right: 5px !important;
+        cursor: pointer !important;
+      }
+      
+      .context-info {
+        margin: 3px 0 !important;
+      }
+      
+      #contextmenu .btn:not(.context-close), #contextmenu a:not(.search-icon), #contextmenu button:not(.context-close),
+      #popoutmenu .btn:not(.context-close), #popoutmenu a:not(.search-icon), #popoutmenu button:not(.context-close) {
+        display: none !important;
+        visibility: hidden !important;
+      }
+
+    </style>
+
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.3/pako_inflate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script src="//web.wwtassets.org/engine/7/wwtsdk.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-touch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.8/angular-strap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.8/angular-strap.tpl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.js"></script>
+    <script src="//web.wwtassets.org/webclient/wwtwebclient.min.js?v=f7a3bf5"></script>
+    <script>
+      // Disable intro only
+      window.introJs = function() {
+        return {
+          start: function() { return this; },
+          exit: function() { return this; }
+        };
+      };
+      
+      // Simple panel toggle
+      function togglePanel() {
+        var body = document.body;
+        var arrow = document.getElementById('toggleArrow');
+        
+        if (body.classList.contains('panel-open')) {
+          body.classList.remove('panel-open');
+          arrow.innerHTML = '▶';
+        } else {
+          body.classList.add('panel-open');
+          arrow.innerHTML = '◀';
+        }
+      }
+      
+      // Set Mars as default view with close zoom
+      $(document).ready(function() {
+        setTimeout(function() {
+          if (typeof wwtlib !== 'undefined' && wwtlib.WWTControl && wwtlib.WWTControl.singleton) {
+            wwtlib.WWTControl.singleton.gotoTarget3(wwtlib.SolarSystemObjects.mars, false, false, true);
+          }
+        }, 2000);
+        
+        // Clean context menu properly
+        setInterval(function() {
+          $('#contextmenu, #popoutmenu').each(function() {
+            var $menu = $(this);
+            if ($menu.is(':visible')) {
+              // Force position
+              $menu.css({
+                'position': 'fixed',
+                'bottom': '20px',
+                'right': '20px',
+                'left': 'auto',
+                'top': 'auto'
+              });
+              
+              // Get content and extract name and classification
+              var html = $menu.html();
+              var nameMatch = html.match(/<strong[^>]*>Names?<\/strong>[^<]*<span[^>]*>([^<]+)<\/span>/i);
+              var classMatch = html.match(/<strong[^>]*>Classification<\/strong>[^<]*<span[^>]*>([^<]+)<\/span>/i);
+              
+              var name = nameMatch ? nameMatch[1] : 'Unknown';
+              var classification = classMatch ? classMatch[1] : 'Unknown';
+              
+              // Create new clean HTML
+              var newHtml = '<div class="context-header">' +
+                           '<span style="font-weight: bold;">' + name + '</span>' +
+                           '<button class="context-close" onclick="$(this).closest(\"#contextmenu, #popoutmenu\").hide()">&times;</button>' +
+                           '</div>' +
+                           '<div class="context-info"><strong>Classification:</strong> ' + classification + '</div>' +
+                           '<div class="context-search">' +
+                           '<span class="search-icon fa fa-search" onclick="console.log(\"Search: \" + \"' + name + '\")"></span>' +
+                           '<span>Search</span>' +
+                           '</div>';
+              
+              $menu.html(newHtml);
+            }
+          });
+        }, 100);
+      });
+    </script>
+  </head>
+
+  <body
+    class="fs-player wwt-webclient-wrapper desktop"
+    data-ng-app="wwtApp"
+    data-res-location=""
+    data-version="1"
+    data-res-version="f7a3bf5"
+    data-standalone-mode="true">
+
+    <div
+      data-ng-controller="MainController"
+      ng-cloak
+      ng-init="initUI()"
+      ng-class="is_mobile ? 'mobile' : 'desktop'">
+
+      <div id="WorldWideTelescopeControlHost">
+        <div id="WWTCanvas" ng-context-menu="showFinderScope"></div>
+      </div>
+
+      <div id="contextmenu" class="contextmenu"></div>
+      <div id="popoutmenu" class="contextmenu"></div>
+
+      <!-- Panel Toggle Button -->
+      <div class="panel-toggle" onclick="togglePanel()">
+        <span id="toggleArrow">▶</span>
+      </div>
+
+      <!-- Top panel -->
+      <div class="top-panel" id="topPanel">
+        <!-- Explore panel -->
+        <div
+          ng-show="!loadingUrlPlace"
+          class="explore-panel rel"
+          ng-controller="ExploreController">
+          <span ng-repeat="bc in breadCrumb" class="bc">
+            <a href="javascript:void(0)" ng-click="breadCrumbClick($index)">{{bc}}</a>&nbsp;&gt;&nbsp;
+          </span>
+
+          <br />
+
+          <div class="explore-thumbs">
+            <div class="ribbon-thumbs" ng-repeat="item in collectionPage">
+              <div class="thumbnail">
+                <a ng-click="clickThumb(item)" title="{{item.get_name()}}">
+                  <label>{{item.get_name()}}</label>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Back button when in subcategory -->
+            <div class="ribbon-thumbs" ng-if="breadCrumb.length > 1" ng-click="breadCrumbClick(0)">
+              <div class="thumbnail">
+                <label>← Back</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden controls for functionality -->
+      <div style="display: none;">
+        <div class="controls">
+          <div class="control">
+            <select id="lstLookAt"
+                    ng-init="$parent.lookAt = 'Sky'"
+                    ng-model="$parent.lookAt"
+                    ng-change="lookAtDropdownChanged()"
+                    ng-options="type for type in lookTypes"></select>
+          </div>
+
+          <div class="control">
+            <select id="lstImagery"
+                    ng-init="$parent.backgroundImagery.name = 'Digitized Sky Survey (Color)'"
+                    ng-model="$parent.backgroundImagery"
+                    ng-change="setSurveyBg()"
+                    ng-options="s.name for s in surveys">
+              <option value="?">&nbsp;</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
