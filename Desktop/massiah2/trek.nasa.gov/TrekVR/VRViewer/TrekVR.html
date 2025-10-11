@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>StarDust</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body id="body">
+
+    <style>
+        @import url(css/TrekVR.css);
+    </style>
+
+    <div id="cesiumContainer" class="fullSize hidden"></div>
+    <div id="introContainer" class="site-wrapper hidden">
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+                <main id="vrIntro" role="main" class="inner cover" style="height:400px;">
+                    <img src="assets/VR.png">
+                    <h1 class="cover-heading">Place your device to VR headset to start.</h1>
+                </main>
+                <!--<main id="noVRIntro" role="main" class="inner cover hidden" style="height:400px;">-->
+                    <!--<img src="images/orientation.png">-->
+                    <!--<h1 class="cover-heading">Rotate right to start.</h1>-->
+                <!--</main>-->
+                <!--<footer class="mastfoot">-->
+                    <!--<div class="inner">-->
+                        <!--<p>NASA Solar System Trek <a href="https://marstrek.jpl.nasa.gov">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
+                    <!--</div>-->
+                <!--</footer>-->
+                <!--<button id="btVRHeadset" type="button" class="btn btn-primary btn-xlg hidden">VR Headset Mode</button>-->
+                <!--<button id="btNoHeadset" type="button" class="btn btn-success btn-xlg hidden">No Headset Mode</button>-->
+            </div>
+            <div style="padding-bottom: 10px;padding-top: 250px;">
+                <img src="assets/thisup.png">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="appLoadingDiv">
+        <div>
+            <h1 class="bigTitle">StarDust</h1>
+            <!--<div class="loader col-centered"></div>-->
+            <!--<h2>Loading..</h2>-->
+            <h2>Welcome to StarDust</h2>
+            <h2>Lacus Mortis</h2>
+            <h2>Chosen as the first landing site for the Commercial Lunar Payload Services (CLPS) program of robotic missions, Lacus Mortis is a plain of basaltic lava 160 km across. Its floor is marked by the impact crater Burg as well as numerous fractures and fault scarps.</h2>
+            <button type="button" class="btn btn-primary btn-xlg" onclick="askForDevicePermission()">Enter</button>
+        </div>
+    </div>
+
+    <!-- library -->
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/Cesium/Cesium.js"></script>
+    <!--<link href="https://cesiumjs.org/releases/1.57/Build/Cesium/Widgets/widgets.css" rel="stylesheet">-->
+    <!--<script src="https://cesiumjs.org/releases/1.57/Build/Cesium/Cesium.js"></script>-->
+    <script src="js/TrekVR.js" data-build="true"></script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-132351601-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+</html>
