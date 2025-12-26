@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.subtitle {
+    color: #cfd8dc;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+    width: 350px;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.8;
+}
